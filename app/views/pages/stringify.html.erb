@@ -1,3 +1,5 @@
-<h1> TEST </h1>
-
-<%= @name + " is so " + @adjective  %>
+<% if @name.blank? or @adjective.blank? %>
+	<%= @text %>
+<% else %>	
+	<%= @name + " is so " + @adjective  %>
+<% end %>

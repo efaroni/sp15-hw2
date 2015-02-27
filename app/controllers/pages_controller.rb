@@ -18,7 +18,7 @@ class PagesController < ApplicationController
   end
 
   def person
-    person1 = Person.new(params[:name], params[:age])
-    person1.introduce
+    @person1 = Person.new(params[:name], params[:age])
+    debugger
   end
 end
